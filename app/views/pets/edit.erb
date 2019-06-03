@@ -7,7 +7,11 @@
 Pet Owner:
 <br>
 <% @owners.each do |owner|%>
+<<<<<<< HEAD
 <input type="radio" name="pet[owner_id]" value="<%= owner.id %>" id="<%= owner.id %>" <%= 'checked' if @pet.owner.id == owner.id %>><%= owner.name %></input>
+=======
+<input type="radio" name="pet[owner_id][]" value="<%= owner.id %>" id="<%= owner.id %>" <%= 'checked' if @pet.owner.id == owner.id %>><%= owner.name %></input>
+>>>>>>> a174ccb12f8e40d5cb434b8e09469d6c1ca9d8e5
 <% end %>
 <br>
 Create New Owner:

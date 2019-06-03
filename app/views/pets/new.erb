@@ -4,7 +4,11 @@ Name: <input type="text" name="pet[name]" id="pet_name">
 <br>
 Owner:
 <% @owners.each do |owner|%>
+<<<<<<< HEAD
 <input type="checkbox" name="pet[owner_id]" value="<%= owner.id %>" id="<%= owner.id %>"><%= owner.name %></input>
+=======
+<input type="checkbox" name="pet[owner_id][]" value="<%= owner.id %>" id="<%= owner.id %>"><%= owner.name %></input>
+>>>>>>> a174ccb12f8e40d5cb434b8e09469d6c1ca9d8e5
 <% end %>
 <br>
 Create a new owner:
